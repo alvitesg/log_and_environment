@@ -22,10 +22,11 @@ class App:
         else:
             logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
         logging.info("Logging configured.") 
-        #logging.debug() 
-        #logging.warning() 
-        #logging.critical()
-        #logging.error()
+        logging.error("Errors need to be checked")
+        logging.debug("Need to fix") 
+        logging.warning("Run tests again") 
+        logging.critical("prioritize these tests")
+        
 
     def load_environment_variables(self):
         settings = {key: value for key, value in os.environ.items()}
