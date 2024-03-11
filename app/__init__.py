@@ -22,6 +22,7 @@ class App:
         else:
             logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
         logging.info("Logging configured.") 
+        logging.info("")
         logging.error("Errors need to be checked")
         logging.debug("Need to fix") 
         logging.warning("Run tests again") 
@@ -59,6 +60,8 @@ class App:
     def start(self):
         # Register commands here
         self.load_plugins()
+        logging.info("Application started. Type 'exit' to exit.")
+        print("menu command provides a list of commands. Type command then number space number to execute commandexit.")
         print("Type 'exit' to exit.")
         while True:  #REPL Read, Evaluate, Print, Loop
             user_input = input(">>> ").strip()
