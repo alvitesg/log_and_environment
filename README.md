@@ -20,6 +20,6 @@
 
     #e. the app class includes a main function where the REPL is initiated.
 
-#3. Initiates an interactive calculator
+#3. Initiates an interactive calculator.
 
 #4. Successful implementation of plugin architecture, interactive logging and environment function with a connection to github.
